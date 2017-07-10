@@ -26,16 +26,17 @@
 			<div class="slides">
         <section>
 						<h1>Welcome to<br>Code in 1 Day</h1>
-						<h6>Kate Shirley</h6>
+            <h6>Instructor: Kate Shirley</h6>
 				</section>
+        <section data-background=url("https://media.giphy.com/media/ChpOyeacGmpQk/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+          <h1>Let's get started!</h1>
+        </section>
         <section>
-          <h2>Who Am I?</h2>
-          <h4>Kate Shirley</h4>
+          <h2>About me</h2>
           <ul>
-            <li>Front-End Developer at Cramer-Krasselt</li>
-            <li>Former GA WDI Student</li>
-            <li>Past lives include account-side advertising/PR, nonprofit fundraising, teaching English in Korea</li>
-            <li>Avid camper and hiker...if you have some hidden midwest spots I should know about please see me after class :)</li>
+            <li class="fragment">Front-End Developer at Cramer-Krasselt</li>
+            <li class="fragment">Former GA WDI Student</li>
+            <li class="fragment">Past lives include account-side advertising/PR, nonprofit fundraising, teaching English in Korea</li>
           </ul>
         </section>
         <section>
@@ -43,34 +44,41 @@
         </section>
         <section>
           <h2>Objectives</h2>
-          <p>Today you will learn fundamentional HTML elements and their properties that construct EVERY website that you use today.</p>
-          <p>We will also learn how to style thouse elemnts using cascading style sheets (CSS). </p>
-          <p>We will make our own static webpage with HTML and CSS</p>
-          <p>We will also talk about Dev Tools, deploying static sites, and what you should learn next.</p>
+          <ul>
+          <li class="fragment">Learn fundamentional HTML elements and their properties. </li>
+          <li class="fragment">Learn how to style those elements using CSS. </li>
+          <li class="fragment">Create our own static webpages with HTML and CSS.</li>
+          <li class="fragment">We will also talk about deploying static sites, development philosophies to consider and what you should learn next.</li>
         </section>
         <section>
           <h2>Agenda</h2>
           <ul>
             <li>What is Web Development</li>
-            <li> the rest<li>
+            <li>Front-End Languages</li>
+            <li>Intro to HTML</li>
+            <li>HTML Document</li>
+            <li>Intro to CSS</li>
+            <li>CSS Layouts</li>
+            <li>Lab</li>
+            <li>Deployment</li>
+            <li>What next?</li>
             </ul>
           </section>
           <section>
             <h2>Before we get started...</h2>
-            <ul>
-              <li>Download Atom</li>
+            <ul class="fragment">
+              <li>Download Sublime</li>
               <li>Download Chrome</li>
               <li>Create an account on codepen.io</li>
             </ul>
           </section>
           <section>
             <h2>Throughout the day...</h2>
-            <ul>
-              <li>Don't be afraid to ask any question at all</li>
-              <li>Don't be afraid to make mistakes</li>
-              <li>Also don't be afraid to answer my questions</li>
-              <li>Google List</li>
-              <li>
+            <ul class="fragment">
+              <li>Ask questions!</li>
+              <li>Make mistakes!</li>
+              <li>Also don't be afraid to answer my questions :)</li>
+              <li>Google is your best friend</li>
             </ul>
           </section>
           <section>
@@ -78,36 +86,71 @@
             <h4>Tell us your name and what brought you here today</h4>
           </section>
           <section>
-            <h2>Why Learn This Stuff?</h2>
-            <p>This is the language of the internet. While you may not be building entire websites, understanding the basic elements of a webpage will help you format Wordpress posts, advertising code, or be able to tweak existing websites and code. Impress your friends and make your boss thing you are a superstar!</p>
+            <h2 >Why Learn This Stuff?</h2>
+            <p>This is the language of the internet. While you may not be building entire websites, understanding the basic elements of a webpage will help you format Wordpress posts, advertising code, or be able to tweak existing websites and code. </p>
           </section>
-          <section>
+          <section data-background=url("https://media.giphy.com/media/Z7IRy689Jjlvi/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+            <h1>You never know...</h1>
+          </section>
+          <section data-background="#581845">
             <h1>How does the world wide web work? </h1>
           </section>
           <section>
-            <p>pic of requests</p>
+            <h3>Clients, servers, responses, requests</h3>
+            <img src="https://ruslanspivak.com/lsbaws-part1/LSBAWS_HTTP_request_response.png">
           </section>
           <section>
-            <p>Movie time</p>
+            <h2>The Internet and the Web</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VRg4XYwxRCE" frameborder="0" allowfullscreen></iframe>
           </section>
           <section>
             <h2>Browsers</h2>
-            <p>Developers (namely, front-end developers) have to decide which browsers they want their webpages to look good in.</p>
+            <p>Developers (namely, front-end developers) have to decide which browsers they want their webpages to look the best in.</p>
+            <img src="http://themes.themeton.com/emerald/files/2013/02/cross-browser.jpg" class="fragment">
           </section>
           <section>
             <h2>Browser stats</h2>
+            <img class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Web_browser_usage_share%2C_01-2016.svg" style="width:500px;">
           </section>
           <section>
-            Front-end vs back-end
+            <h1>Front-End vs.<br>Back-End</h1>
           </section>
           <section>
-              Front-end vs back-end
+              <h2>Front-End</h2>
+              <ul>
+                <li class="fragment">Code is rendered by the client (your browser)</li>
+                <li class="fragment">Describes content, presentation, and behavior</li>
+                <li class="fragment">Examples: HTML, CSS, JavaScript</li>
           </section>
           <section>
+              <h2>Back-End</h2>
+              <ul>
+                <li class="fragment">Code is interpreted on the server</li>
+                <li class="fragment">Handles, data stores, state, business logic</li>
+                <li class="fragment">Passes content to the front-end before rendering in the browser</li>
+                <li class="fragment">Examples: Ruby, Python, PHP</li>
+          </section>
+          <section>
+            <h2>Front-End and Back-End</h2>
+            <img src="images/one.png" style="width:700px;">
+          </section>
+          <section>
+            <h2>Front-End and Back-End</h2>
+            <img src="images/two.png" style="width:700px;">
+          </section>
+          <section>
+            <h2>Front-End and Back-End</h2>
+            <img src="images/three.png" style="width:700px;">
+          </section>
+          <section>
+            <h2>Front-End and Back-End</h2>
+            <img src="images/four.png" style="width:700px;">
+          </section>
+          <section data-background="#581845">
             <h1>Front-End Languages</h1>
           </section>
-          <section data-background="tomato">
-  					<h2>The Three Amigos</h2>
+          <section >
+  					<h2>Front-End Languages</h2>
   					<table>
   						<thead>
   							<tr>
@@ -146,9 +189,18 @@
           </section>
           <section>
             <h2>Partner Practice</h2>
-            Pull up another website or 2 with a partner, and look at some of the home page elements together. Do you see headlines, links and images? What does the styling look like? What about interactions? Talk about what languages are affecting the site elements. (5 minutes)
+            Pull up the New York Times website with a partner, and look at some of the home page elements together. What kind of content do you see? What does the styling look like? What about interactions? Talk about what languages are affecting the site elements. (5 minutes)
           </section>
           <section>
+            <h2>Web Development Workflow</h2>
+            <img src="images/five.png">
+            <ul style="font-size: 30px;">
+              <li class="fragment">The website goes through several interations between UX and Design, I am delivered design files</li>
+              <li class="fragment">Use HTML, CSS, and JavaScript to code the page to the client specs</li>
+              <li class="fragment">Besides "how it looks", Front-End developers must consider accessibility, performance, cross-browser and cross-device functionality</li>
+            </ul>
+          </section>
+          <section data-background="#581845">
             <h1>HTML: Hypertext markup language</h1>
           </section>
           <section>
@@ -169,7 +221,7 @@
           </section>
           <section>
             <h2>HTML Syntax</h2>
-            insert tag syntax picture
+            <img src="https://www.w3.org/wiki/images/3/39/Elements.png" style="width:700px;">
           </section>
           <section>
             <h2>Headline Tag</h2>
@@ -180,7 +232,7 @@
               <li class="fragment">Desired content between</li>
             </ul>
           </section>
-          <section>
+          <section >
           <h2>HTML Intro Codealong</h2>
           As we learn some of the most commonly used tags you will practice along in codepen to see the tags come to life - and the default styles and behavior from the browser.
           <br>
@@ -189,7 +241,7 @@
         </section>
           <section>
             <h2>6 Headline Sizes</h2>
-            <pre><code class="html">
+            <pre><code class="html" data-trim>
               <h1>Most Important Headline</h1>
               <h2>2nd Most Important Headline</h2>
               <h3>3rd Most Important Headline</h3>
@@ -201,13 +253,13 @@
           </section>
           <section>
             <h2>Paragraph Tag</h2>
-            <pre><code class="html"><p>I'm a paragraph. I'm a block of text with two or more sentences.</p></code></pre>
+            <pre><code class="html"><p>I'm a paragraph. I'm a block of text with sentences.</p></code></pre>
           </section>
           <section>
             <h2>I want to break it up!</h2>
-            <pre><code class="html"><br></code></pre>
+              <pre><code class="html" data-trim><br></code></pre>
             <p class="fragment">No closing tag. Should only be used on copy.</p>
-            <p class="fragment">Place a br tag in your paragraph</p>
+            <p class="fragment">Place a br tag in your paragraph.</p>
           </section>
           <section>
             <h1>Nesting Tags</h1>
@@ -215,7 +267,7 @@
           <section>
             <h2>HTML is hierarchical and can be nested.</h2>
             <h4 class="fragment">Check out this code for an "ordered list".</h4>
-            <pre class="fragment"><code class="html">
+            <pre class="fragment"><code class="html" data-trim>
               <ol>
                 <li>This is an ordered list!</li>
                 <li>You will see numbers, in order.</li>
@@ -224,9 +276,9 @@
               </code></pre>
           </section>
           <section>
-            <h2>Okay, but what if I like chaos?</h2>
+            <h2>Okay, but what if I don't want numbers?</h2>
             <h4>UNordered list to the rescue!</h4>
-            <pre class="fragment"><code class="html">
+            <pre class="fragment"><code class="html" data-trim>
               <ul>
                 <li>This is an ordered list!</li>
                 <li>Look at those numbers, in order!</li>
@@ -239,7 +291,7 @@
           </section>
           <section>
             <h2>Image Tag</h2>
-            <pre class="fragment"><code class="html">
+            <pre class="fragment"><code class="html" data-trim>
               <img src="photo.jpg" alt="cat image">
               </code></pre>
               <ul>
@@ -247,59 +299,61 @@
                 <li class="fragment">src attribute</li>
                 <li class="fragment">alt attribute</li>
                 <li class="fragment">no closing tag</li>
-                <li class="fragment">Try in codepen, with source "SOURCE IMAGE"</li>
+                <li class="fragment">Try in codepen, with source "http://lorempixel.com/400/200"</li>
               </ul>
           </section>
           <section>
             <h2>Anchor (or link) Tag</h2>
-            <pre class="fragment"><code class="html">
+            <pre class="fragment"><code class="html" data-trim>
               <a href="https://yourlink.com">Click Me</a>
               </code></pre>
               <ul>
                 <li class="fragment">href attribute</li>
                 <li class="fragment">wrapped link description</li>
                 <li class="fragment">don't include attributes in closing tag</li>
-                <li class="fragment">try it in codepen with a link to "LINK HERE"</li>
+                <li class="fragment">try it in codepen with a link to General Assembly</li>
               </ul>
           </section>
           <section>
             <h1>HTML Lab Time</h1>
           </section>
           <section>
-            <h3>CODEPEN LINK</h3>
-            <p>Explore, add, subract, "mess up" this page with any tags you'd like to practice with. (10 minutes) </p>
+            <h2>Codepen practice</h2>
+            <p>Explore, add, subract, "break" this page with any tags you'd like to practice with (10 minutes) </p>
             <p class="fragment">Idea: how would you make an image a link? (Hint: Nesting!)</p>
-            <p class="fragment">Idea: Could you make a list of links?</p>
+            <p class="fragment">Idea: Use google to research other tags like header, footer, article, section, etc.</p>
           </section>
           <section>
             <h2>Semantic html tags vs. semantic-less html tags</h2>
+            <p class="fragment">Semantic tags are what they say they are. You shoud avoid using inaccurate tags. Examples include article, footer, header, main, nav, section, aside, etc.</p>
+            <p class="fragment">Semantic-less tags are used purely for the sake of the developer to section content off for styling.<br> Examples: div, span.</p>
           </section>
-          <section>
+          <section data-background="#581845">
             <h1>HTML DOCUMENT SYNTAX</h1>
           </section>
           <section>
-            Codepen is great for quick practicing, but when writing our own HTML pages we will need to follow a 'boilerplate' html document structure so the browser knows it's an HTML doc.
+            <h2>Why is this important?</h2>
+            Codepen is great for quick practicing, but when writing our own HTML pages we will need to follow a typical html document structure so the browser knows it's an HTML doc.
           </section>
           <section>
             <h2>Boilerplate HTML</h2>
-            <pre><code class="html">
-              <!DOCTYPE html>
-            <html>
-              <head>
-                <meta charset="utf-8">
-                <title></title>
-              </head>
-              <body>
-                <h1>Hello world</h1>
-                <p>All your code goes here between the body tags</p>
-              </body>
-            </html>
-          </code>
-        </pre>
-        <h4 class="fragment">Do these tags seem weird? Let's learn what they each do...</h4>
+            <pre><code class="html" data-trim>
+              &lt!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;title>My Webpage&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1>Hello world&lt;/h1&gt;
+                  &lt;p>All of the tags we just practiced go between the
+                  body tags.&lt;/p&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+          </code></pre>
+        <h4 class="fragment">What new tags do you see? Let's learn what they each do...</h4>
           </section>
           <section>
-            <h2>Document Tags</h2>
             <table>
   						<thead>
   							<tr>
@@ -308,25 +362,25 @@
   								<th>Notes</th>
   							</tr>
   						</thead>
-  						<tbody>
+  						<tbody style="font-size:30px;">
   							<tr class="fragment">
   								<td>doctype</td>
-  								<td><pre><code class="html"><!DOCTYPE html></code></pre></td>
-  								<td>Tells the browser that the document is HTML5.Should be the first tag in the document. </td>
+  								<td>&lt;!DOCTYPE: html&gt;</td>
+  								<td>Tells the browser that the document is HTML5. Should be the first tag in the document. </td>
   							</tr>
                 <tr class="fragment">
   								<td>html</td>
-  								<td><pre><code class="html"><html>...</html></code></pre></td>
+  								<td>&lt;html&gt;</td>
   								<td>Parent element for all other elements on the page.</td>
   							</tr>
                 <tr class="fragment">
   								<td>head</td>
-  								<td><pre><code class="html"><head>...</head></code></pre></td>
+  								<td>&lt;head&gt;</td>
   								<td>Parent element of all the metadata-nothing here is rendered on the screen, it's all for the browser.</td>
   							</tr>
                 <tr class="fragment">
   								<td>body</td>
-  								<td><pre><code class="html"><body>...</body></code></pre></td>
+  								<td>&lt;body&gt;</td>
   								<td>Parent element of page content. All tags we just practiced would go between these tags, and would get rendered to the screen.</td>
   							</tr>
   						</tbody>
@@ -334,7 +388,6 @@
           </section>
           <section>
             <h2>Meta Tags</h2>
-            <p>These tags go in between the head tags</p>
             <table>
               <thead>
                 <tr>
@@ -346,18 +399,13 @@
               <tbody>
                 <tr class="fragment">
                   <td>title</td>
-                  <td><pre><code class="html"><!DOCTYPE html></code></pre></td>
+                  <td>&lt;title&gt;</td>
                   <td>Sets the title for the web page. Rendered by the web browser in the tab, and by search engines. </td>
                 </tr>
                 <tr class="fragment">
                   <td>meta</td>
-                  <td><pre><code class="html"><html>...</html></code></pre></td>
+                  <td>&lt;meta&gt;</td>
                   <td>Can set various metadata attributes of the page,such as character set. </td>
-                </tr>
-                <tr class="fragment">
-                  <td>meta</td>
-                  <td><pre><code class="html"><head>...</head></code></pre></td>
-                  <td>Used to set device width, initial scale, and other viewport-related settings. </td>
                 </tr>
               </tbody>
             </table>
@@ -375,49 +423,49 @@
           </section>
           <section>
             <h4>Type the following code exactly as you see, double checking for syntax and spelling typos.</h4>
-            <pre><code class="html">
-              <!DOCTYPE html>
-            <html>
-              <head>
-                <meta charset="utf-8">
-                <title>My Webpage</title>
-              </head>
-              <body>
-                <h1>Hello world</h1>
-                <p>All your code goes here between the body tags</p>
-              </body>
-            </html>
-          </code>
-        </pre>
+            <pre><code class="html" data-trim>
+              &lt!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;title>My Webpage&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1>Hello world&lt;/h1&gt;
+                  &lt;p>This is where all your content goes.&lt;/p&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+          </code></pre>
           </section>
           <section>
             <h2>Test the setup</h2>
             <ul>
               <li class="fragment">Save your code</li>
-              <li class="fragment">Open your My Webpage Folder open your index file. (You may need to right click and "Open With...Chrome")</li>
-              <li class="fragment">A Chrome browser window should open and you should see your headline and paragraph. EMOJI</li>
+              <li class="fragment">Open your My Webpage Folder, and then open your index file. (You may need to right click and "Open With...Chrome")</li>
+              <li class="fragment">A Chrome browser window should open and you should see your headline and paragraph. Woohoo!</li>
               <li class="fragment">Something not right? Debug!</li>
             </ul>
           </section>
           <section>
-            <h3>15 Minutes of HTML Practice</h3>
-            <p class="fragment">Start writing website about anything you want, including, but not limited to:</p>
+            <h3>HTML Content Lab</h3>
+            <p class="fragment">Start creating website about anything you want, using the following tags:</p>
             <ul class="fragment">
               <li>1 H1 Tag, 2 other H tags</li>
-              <li>a link</li>
-              <li>an image</li>
-              <li>a list</li>
-              <li>a nested element</li>
+              <li>2 links</li>
+              <li>1 image</li>
+              <li>1 list</li>
+              <li>Research and use other tags, think about what you  need to structure the content for your particular site.</li>
             </ul>
-            <p class=fragment>As time allows, add more content.<span class=fragment> Feel free to look up other html tags and attributes and test them out!<span class="fragment"> Remember to save and refresh to see your updated code.</p>
+            <p class=fragment>As time allows, add more content.<span class=fragment> Google will be your best friend!</p>
           </section>
           <section>
-            <h1>Okay, so our sites have good content.</h1>
+            <h1>Okay, so our site has good content.</h1>
+            <h6 class="fragment">...but it's ugly :( </h6>
           </section>
-          <section>
-            <h1>But, they look Ugly.<span class="fragment"> <br>Let's give it a makeover with CSS!</h1>
+          <section data-background=url('https://media.giphy.com/media/dVleMgtOlPE6Q/giphy.gif') data-background-repeat="no-repeat" data-background-size=cover data-background-position=center >
+            <h1 style="color:#581845; background-color:rgba(255,255,255,.3);">Let's give it a makeover with CSS!</h1>
           </section>
-          <section>
+          <section data-background="#581845">
             <h1>CSS: Cascading Stylesheets</h1>
           </section>
           <section><h2>What is CSS</h2>
@@ -425,16 +473,20 @@
               <li class="fragment">Adds a presentational layer to our pages.</li>
               <li class="fragment">Provides the browser with rules for how our content should be displayed, by attaching styles to the HTML we write.</li>
               <li class="fragment">All our CSS needs to go in a .css file, and that file be referenced from our HTML.</li>
-              <li class="fragment">So fun! Colors, small animations, vector graphics - explore codepen for ideas</li>
+              <li class="fragment">So fun! Colors, small animations, vector graphics - explore codepen for ideas.</li>
             </ul>
           </section>
           <section>
             <h2> Css syntax</h2>
-            INSERT SYNTAX PICTURE
+            <img src="http://learnwebcode.com/wp-content/uploads/2010/02/anatomy-of-a-css-rule.gif" style="width:600px;">
           </section>
           <section>
             <h2>Css syntax</h2>
-            <pre><code class="css">h1{color: red; font-size:60px;}</code></pre>
+            <pre><code class="css" data-trim>
+              h1{
+                  color: red;
+                  font-size: 60px;
+                }</code></pre>
             <h1 class="fragment" style="color:red;font-size=60px;">Hey I'm styled</h1>
           </section>
           <section>
@@ -451,99 +503,413 @@
               <tbody>
                 <tr class="fragment">
                   <td>font-family:</td>
-                  <td>{'Helvetica', sans-serif;}</td>
+                  <td>'Helvetica', sans-serif;</td>
                 </tr>
                   <tr class="fragment">
                   <td>text-align:</td>
-                  <td>{center;}</td>
+                  <td>center;</td>
                   </tr>
                   <tr class="fragment">
                   <td>text-decoration:</td>
-                  <td>{underline;} (basic decorations)</td>
+                  <td>underline; (basic decorations)</td>
                   </tr>
                   <tr class="fragment">
                   <td>border:</td>
-                  <td>{2px solid black;} (width, style, color)</td>
+                  <td>2px solid black; (width, style, color)</td>
                   </tr>
                   <tr class="fragment">
                   <td>padding:</td>
-                  <td>{20px 40px;} (top/bottom, left/right)</td>
+                  <td>20px 40px; (top/bottom, left/right)</td>
                   </tr>
                   <tr class="fragment">
                   <td>margin:</td>
-                  <td>{50px auto 20px;} (top, left/right, bottom)</td>
+                  <td>50px auto 20px; (top, left/right, bottom)</td>
                   </tr>
                   <tr class="fragment">
                   <td>width:</td>
-                  <td>{600px;}</td>
+                  <td>600px;</td>
                   </tr>
               </tbody>
             </table>
           </section>
           <section>
-            <h1>Css Codepen Practice</h1>
-            <p>Add the properties from the previous slide to an h1 tag. Use the example properties, test your own, or look up other properties and values online. (10 minutes)</p>
-          </section>
-          <section>
             <h2>Choosing colors in CSS: 3 Ways</h2>
             <ul>
-              <li class="fragment">Named colors<span class="fragment">: "red", "blue", just the basics and a few weird ones.</li>
-              <li class="fragment">RGB, or RGBA values<span class="fragment">:3 numbers representing color and opacity. Example: rgba(255, 200, 15, .5)</li>
-              <li class="fragment">Hex codes<span class="fragment">: A # plus a 6 digit alphanumeric code. Example: #F2A489 </li>
-              <li class="fragment">Try out colors with the "background-color" property in your codepen. Look up color types online for help.</li>
+              <li class="fragment">Named colors: "red", "blue", google others.</li>
+              <li class="fragment">RGB, or RGBA values: 3 numbers representing color and opacity. Example: rgba(255, 200, 15, .5)</li>
+              <li class="fragment">Hex codes: A # plus a 6 digit alphanumeric code. Example: #F2A489 </li>
             </ul>
           </section>
           <section>
+            <h1>Css Codepen Practice</h1>
+            <p>Add the properties from the previous slide to an h1 tag. Use the example properties, test your own, or look up other properties and values online. (10 minutes)</p>
+          </section>
+          <section data-background="tomato">
             <h2>Bonus: Let's add a hover state with a transition!</h2>
+            <pre class="fragment"><code class="css">
+              h1 {
+                background-color: grey;
+                transition: all .2s ease-in;
+              }
+
+              h1:hover {
+                background-color: tomato;
+              }
+            </code></pre>
           </section>
           <section>
             <h3>Css in 3 ways </h3>
             <h6> unless it's a very tiny project, an external stylesheet will be best practice.</h6>
             <ul>
-              <li class="fragment">Inline<span class="fragment">: Included as an attribute on html tags.</li>
-              <li class="fragment">Internal Stylesheet<span class="fragment">: Included between the head tags</li>
-              <li class="fragment">External Stylesheet<span class="fragment">: A .css file is linked to the html file</li>
+              <li class="fragment">Inline: Included as an attribute on html tags.</li>
+              <li class="fragment">Internal Stylesheet: Included between the head tags</li>
+              <li class="fragment">External Stylesheet: A .css file is linked to the html file</li>
             </ul>
           </section>
           <section>
             <h1>Let's Link an external stylesheet and test it</h1>
           </section>
           <section>
+            <h2>Creating a stylesheet</h2>
+              <ul>
+                <li class="fragment">Open a new file in Atom</li>
+                <li class="fragment">Save as "style.css" in your My Website folder</li>
+                <li class="fragment">Double check name and location in finder</li>
+              </ul>
+            </section>
+          <section>
+            <h2>Accessing Stylesheet in HTML</h2>
+            <h6>Add this code to the end of your "head" section</h6>
+              <pre class="fragment"><code class="html" data-trim>
+                  &lt!DOCTYPE html&gt;
+                  &lt;html&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="utf-8"&gt;
+                      &lt;title>My Webpage&lt;/title&gt;
+                      &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;
+                  </code></pre>
+                <ul>
+                  <li class="fragment">The rel attribute specifies the relationship between the HTML page and the file it is linked to.</li>
+                  <li class="fragment">The href attribute specifies the path to the CSS file.</li>
+              </ul>
+          </section>
+          <section>
+            <h2>Add CSS Code and Test</h2>
+            <h6>Write two simple styles for your H1 tag in the css file</h6>
+            <pre><code class="css">
+              h1{
+                  color: red;
+                  font-size: 60px;
+                }</code></pre>
+                <ul>
+                  <li class="fragment">Save the document.</li>
+                  <li class="fragment">Open the index.html file with chrome (or refresh an open window), and you should have a large, red H1. </li>
+                  <li class="fragment">You've just linked an external stylesheet!</li>
+                </ul>
+          </section>
+          <section>
             <h1>Classes and IDs</h1>
+          </section>
+          <section>
+            <h2>Targeting specific elements</h2>
+              <p>Classes and IDs allow us to assign "labels" to elements for targeting</p>
+              <p class="fragment">They are created as attributes in HTML, and then used as selectors in CSS</p>
+            </section>
+            <section>
+            <h2>IDs</h2>
+            <ul>
+              <li class="fragment">Ids are used to target one specific element.</li>
+              <li class="fragment">Each element can only have 1 Id. </li>
+              <li class="fragment">The Id name can only be used once per page.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>ID Example</h2>
+            <pre class = "fragment"><code class="html" data-trim>
+              <ul>
+                <li>Just a regular list item</li>
+                <li id="special">I'm a special bordered item!</li>
+                <li>Regular again</li>
+              </ul></code></pre>
+          <pre class="fragment"><code clas="css" data-trim>
+              li {
+                font-size: 12px;
+              }
+              #special {
+                border: 1px solid black;
+              }
+            </code></pre>
+            <ul>
+              <li class="fragment">Use "#" with the ID name to use in CSS</li>
+              <li class="fragment">The second list item will have all of the li styles, and the border as applied by the #special id.</li>
+        </section>
+        <section>
+        <h2>Classes</h2>
+        <ul>
+          <li class="fragment">Classes are used to group elements together.</li>
+          <li class="fragment">Elements can have multiple classes. </li>
+          <li class="fragment">The class name can be applied to as many elements as you need.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Class Example</h2>
+        <pre class = "fragment"><code class="html" data-trim>
+          <h1>My Site</h1>
+          <p class="description">Here's some information about me.</p>
+          <p class="description">More information about me.</p>
+          <ul class="description">
+            <li>This list is a different tag type than p,
+            but will have similar style.</li>
+          </ul></code></pre>
+        <pre class="fragment"><code clas="css" data-trim>
+          .description{
+            font-family: sans-serif;
+            margin: 10px 20px;
+          }
+        </code></pre>
+        <p class="fragment">Use . with the class name to use in CSS</p>
+      </section>
+          <section>
+            <h2>Partner Practice Part 2</h2>
+            <p>Pull the New York Times website back up. Can you tell which elements are part of the same class? What unique elements might have an id? Talk about HTML elements  you see as well.</p>
+          </section>
+          <section data-background="#581845">
+            <h1>Creating Layouts with CSS</h1>
           </section>
           <section>
             <h1>The Box Model</h1>
           </section>
-          <section>
-            <h1>Block vs. Inline</h1>
+          <section data-background=url('https://media.giphy.com/media/3oEjI798qgG6UMhJm0/giphy.gif') data-background-repeat="no-repeat" data-background-size=cover data-background-position=center >
+            <h1>Everything is a Box.</h1>
           </section>
           <section>
-            <h1>Layout/Flexbox</h1>
+            <h2>Every tag is a Box</h2>
+            <img src="https://mdn.mozillademos.org/files/13649/box-model-alt-small.png" style="width:650px;">
           </section>
           <section>
-            Layout codealong in codepen
+            <h2>Box Model Elements</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="fragment">
+                  <td>Border</td>
+                  <td>Every box has a border, even if it’s not visible or specified to be 0px wide.</td>
+                </tr>
+                <tr class="fragment">
+                  <td>Margin</td>
+                  <td>Margins sit outside the border. You can set the width of a margin to create space between the borders of two adjacent boxes.</td>
+                </tr>
+                <tr class="fragment">
+                  <td>Padding</td>
+                  <td>Every box has a border, even if it’s not visible or specified to be 0px wide.</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
-          <section>Add google fonts</section>
-          <section>Major lab, put it all together</section>
-          <section>Dev Tools and Debugging</section>
-          <section>Hosting options </section>
-          <section data-background=url("http://i.giphy.com/90F8aUepslB84.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center><h2>Now you can code!</h2></section>
-          <section>Day as a Dev</section>
-          <section>What to learn next</section>
-          <section>Resources</section>
-
           <section>
-          <h2>What is HTML?</h2>
-          <ul>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
-            <li class="fragment"></li>
+            <h1>Block vs. Inline Elements</h1>
+          </section>
+          <section>
+            <h2>Block vs. Inline Elements</h2>
+            <img src="http://2.bp.blogspot.com/-72-u56KAoE0/Vgls3i0aNmI/AAAAAAAAGH8/k8PG2EOXfMg/s640/12.png">
+            <ul>
+              <li class="fragment">Block-Level elements will always start on a new line. Examples: h1-h6, ul, li, p, ol, div</li>
+              <li class="fragment">Inline elements will continue on the same line as thier other inline neighbors. Examples: a, img, span</li>
+          </section>
+          <section>
+            <h2>Why does box sizing and block vs. inline matter?</h2>
+            <p class = "fragment">When designging layouts in CSS, you need to know the default behavior of your elements in order to make thoughful styling decisions. You're able to override default display with the "box-model" and "display" properties in CSS.</p>
+          </section>
+          <section>
+            <h1>Positioning</h1>
+          </section>
+          <section>
+            <h2>Position Property</h2>
+            <pre><code class="css" data-trim>
+              img {
+                position: relative;
+              }</code></pre>
+            <ul>
+            <li class="fragment">Static: Default
+            <li class="fragment">Relative: Positioned relative to its default position
+            <li class="fragment">Fixed: Doesn't move when you scroll</li>
+            <li class="fragment">Absolute: Similar to fixed, but positioned relative to the window.</li>
+            <li class="fragment">See the tutorial for code examples: https://css-tricks.com/almanac/properties/p/position/</li>
           </ul>
         </section>
         <section>
+          <h2>Floats</h2>
+          <pre><code class="css" data-trim>
+            img {
+              float: right;
+            }</code></pre>
+          <p class="fragment">Floating originally started with the intention of having an image off to the side with text flowing around it - like a magazine. It takes an element out of the normal flow and moves it either left or right.
+          <img class="fragment" src="https://css-tricks.com/wp-content/csstricks-uploads/web-text-wrap.png">
+        </ul>
+      </section>
+          <section>
+            <h1>Flexbox</h1>
+          </section>
+          <section>
+            <h2>What is Flexbox?</h2>
+            <pre><code class="css" data-trim>
+              nav {
+                display: flex;
+              }</code></pre>
+              <p class="fragment">Flexbox is a CSS layout mode that provides a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").
+          </section>
+          <section>
+            <h2>Flexbox Froggy Tutorial</h2>
+            <a href="http://flexboxfroggy.com/"><p>http://flexboxfroggy.com/</p></a>
+          </section>
+          <section>
+            <h1>Build a Menu with Flexbox</h1>
+            <p>http://tinyurl.com/flexmenukate</p>
+          </section>
+          <section>
+            <h1>Codealong</h1>
+          </section>
+          <section data-background=url("https://media.giphy.com/media/uWv3uPfWOz088/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+            <h1>Self-Guided Lab</h1>
+          </section>
+          <section>
+            <h2>Website Lab</h2>
+            <p>We have covered A LOT so far today (and have more!), please use this time to apply some of the concepts to your working site. Ideas to get you started...</p>
+            <ul>
+              <li class="fragment">Add classes and IDs to your element and style them in CSS.</li>
+              <li class="fragment">Add a menu with a list of links</li>
+              <li class="fragment">Use positioning to "stick" a header to the top or footer to the bottom</li>
+              <li class="fragment">Create hover states for links, buttons, images</li>
+              <li class="fragment">Dig into CSS documentation</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Are you stuck?</h2>
+            <h6 class="fragment">Well, this is your life now</h6>
+            <p class="fragment">I will be walking around to provide hands-on assistance, but try debugging first!</p>
+            <ul>
+              <li class="fragment">Check your code syntax: do you have semi-colons, space, punctuation in the right place?</li>
+              <li class="fragment">Check your spelling: are your class/IDs spelled the same in HTML and CSS?</li>
+              <li class="fragment">Think about default inline, block, box-model behavior - refer to documenation</li>
+              <li class="fragment">Google your problem, Stack overflow is very helpful</li>
+            </ul>
+          </section>
+          <section>Dev Tools and Debugging</section>
+          <section data-background=url('https://media.giphy.com/media/xT9KVySLg5QZxWN2bm/giphy.gif') data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+            <h2>You've Got a website, now what?</h2>
+          </section>
+          <section data-background="#581845">
+            <h1>Static Site Deployment</h1>
+          </section>
+          <section>
+            <h2>Options for Deploying Your Site</h2>
+            <ul>
+              <li class="fragment">Purchase a domain and server space with a web host</li>
+                <li class="fragment">Host on Github</li>
+                <li class="fragment">Use a static deployment service like Bit Ballon.</li>
+          </section>
+          <section>
+            <h2>Where do I get a domain?</h2>
+            <ul>
+              <li class="fragment">A domain is a registered URL that points to your site files on your server</li>
+              <li class="fragment">You pay for domain registration on an annual basis</li>
+              <li class="fragment">I like gandi.net and namecheap.com</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Why do I need a host?</h2>
+            <ul>
+            <li class="fragment">Your site files need to "live" somewhere in order for everyone to be able to access them.</li>
+            <li class="fragment">Different companies have different packages based on storage, number of sites and users.</li>
+            <li class="fragment">I'd probably avoid GoDaddy, and I use MediaTemple at the office.</li>
+            <li class="fragment">Look for the "Seriously Comprehensive Guide to Choosing a Web Host on webdesign.tutsplus.com.</li>
+          </ul>
+          </section>
+          <section>
+            <h2>GIthub.io Site</h2>
+            <ul>
+              <li class="fragment">Github is version control software that allows you to store your code remotely
+              <li class="fragment">Github repositories (projects) are essentially project files hosted on github
+              <li class="fragment">Github automatically dedicates a specific repo name (yourusername.github.io) to being a publicly accessible site</li>
+              <li class="fragment">Follow this tutorial: https://pages.github.com/</li>
+
+            </ul>
+          </section>
+          <section>
+            <h2>BitBalloon: Static Site Deployment</h2>
+            <ul>
+              <li class="fragment">BitBalloon.com makes it easy to drag and drop a static project into their interface to have a hosted site, instantly</li>
+              <li class="fragment">So let's do that now!</li>
+            </ul>
+              <img class="fragment" src="https://lh6.googleusercontent.com/R1G0vvPI2swoDNfXy_dDhiJggzdOXq_agtPtXAaae6gA6YQBhI-frfhoP4wepyDu2RDnHysCwKA=s640-h400-e365">
+          </section>
+
+          <section data-background=url("http://i.giphy.com/90F8aUepslB84.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center><h2>Now you can code!</h2></section>
+          <section>
+            <h1>So, what's next?</h1>
+          </section>
+          <section data-background=url("https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif") data-background-repeat="no-repeat" data-background-size=cover data-background-position=center><h2 style="color:black;">Code All Day Every Day</h2></section>
+          <section>
+            <h2>Best Practices to adopt from day 1</h2>
+            <ul>
+              <li class="fragment">Write lean, clean code (DRY, consistent formatting)</li>
+              <li class="fragment">Document your code (comments/README)</li>
+              <li class="fragment">Version Control your code (get on Github!)</li>
+              <li class="fragment">Code for semantics (use tags as they were intended)</li>
+              <li class="fragment">Code for accessibility (can everyone view your site?)</li>
+              <li class="fragment">Do it right the first time (it will save time in the end)</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Philosophies to Consider</h2>
+            <img style src="https://media.giphy.com/media/xW2j4gQmxnCs8/giphy.gif">
+            <ul>
+              <li class="fragment">Responsive Design</li>
+              <li class="fragment">Mobile First</li>
+              <li class="fragment">Progressive Enchancement and Graceful Degradation</li>
+            </ul>
+          </section>
+          <!-- <section>
+            <h2>Tools I Use</h2>
+            <img style src="https://media.giphy.com/media/xW2j4gQmxnCs8/giphy.gif">
+            <ul>
+              <li class="fragment">Responsive Design</li>
+              <li class="fragment">Mobile First</li>
+              <li class="fragment">Progressive Enchancement and Graceful Degradation</li>
+            </ul>
+          </section> -->
+          <section>
+            <h2>Resources</h2>
+            <ul>
+              <li class="fragment">MDN</li>
+              <li class="fragment">CSS Tricks</li>
+                <li class="fragment">Codecademy (get started with Javascript!)</li>
+                  <li class="fragment">Dash (General Assembly)</li>
+                    <li class="fragment">Shay Howe’s Learn to Code HTML & CSS</li>
+                      <li class="fragment">CodePen</li>
+                      <li class="fragment">StackOverflow</li>
+                      <li class="fragment">Learnlayout.com</li>
+                      <li class="fragment">In Person: Meetups, Hackathons, at GA</li>
+                    <li class="fragment">WHATEVER WORKS BEST FOR YOU!</li>
+          </section>
+
+        <section>
           <h1>Q & A</h1>
         </section>
+        <section data-background=url('https://media.giphy.com/media/7sVpoFJ1yokE0/giphy.gif') data-background-repeat="no-repeat" data-background-size=cover data-background-position=center>
+          <h1>That's all folks</h1>
+        </section>
+        <section>
+          <h1>Thanks for coming!</h1>
+          <p>Kate Shirley - kate.m.shirley@gmail.com</p>
+
+
 			</div>
 		</div>
 
